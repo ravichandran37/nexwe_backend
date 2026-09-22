@@ -75,7 +75,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-# Email Configuration
+# Email Configuration (SMTP - works locally, blocked on Render Free tier)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -84,4 +84,9 @@ EMAIL_TIMEOUT = 5
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'nexwesolutions@gmail.com')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '') # Requires an App Password
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# Cloud Email Providers (HTTP API over port 443 - works on Render Free tier)
+WEB3FORMS_ACCESS_KEY = os.environ.get('WEB3FORMS_ACCESS_KEY', '')
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY', '')
+
 
