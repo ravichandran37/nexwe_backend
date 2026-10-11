@@ -13,6 +13,35 @@ def seed():
 
     projects_data = [
         {
+            "title": "Cravo Kitchen & Bar",
+            "description": "A modern, responsive food ordering website and admin management platform for Cravo Kitchen & Bar, built with React 19, TypeScript, Tailwind CSS, Node.js, Express.js, and MySQL, with design DNA from Google Stitch AI.",
+            "badges": ["React 19", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MySQL", "JWT Auth", "REST API"],
+            "features": [
+                "Real-time Food Menu & Filters",
+                "Interactive Cart & Checkout",
+                "Live Kitchen Tickets Admin",
+                "Dish Stock & Availability Toggle",
+                "JWT Security & Rate Limiting",
+                "Google Stitch AI Warm Epicurean UI"
+            ],
+            "architecture_steps": [
+                "React 19 / TS Storefront",
+                "Express.js REST Engine",
+                "MySQL Connection Pool",
+                "Live Kitchen Ticket Queue"
+            ],
+            "caseStudy": {
+                "overview": "A modern, high-performance food ordering website and comprehensive administrative management platform engineered for Cravo Kitchen & Bar. The platform bridges customer storefront ordering with real-time kitchen operations, providing instantaneous dish search, dynamic cart calculations with free delivery thresholds, automated tax computations, and a secured JWT admin portal for live ticket tracking and menu management.",
+                "problem": "Independent culinary venues frequently encounter heavy third-party marketplace commissions (up to 30%), clunky ordering experiences that cause customer abandonment, and an absence of direct, real-time ticket orchestration in the kitchen.",
+                "solution": "Engineered a bespoke, commission-free fullstack restaurant solution with a client storefront boasting instant dish filtering, dynamic subtotal calculations, and streamlined checkout, alongside an authenticated administrative suite for live order status updates (Pending → Preparing → Ready → Delivered) and instant dish inventory toggling.",
+                "features": "Features multi-category filtering (Burgers, Pizza, Chicken, Snacks, Drinks, Desserts), dynamic search, quantity adjustments, transparent delivery milestones (free delivery over $40), tax calculation (8.25%), kitchen dashboard with live metrics (Total Orders, Pending, Preparing, Ready, Delivered), and one-click stock toggle.",
+                "architecture": "Decoupled architecture: Vite + React 19 + TypeScript frontend with Tailwind CSS and Lucide React, styled using Google Stitch AI's Warm Epicurean design tokens. Communicates via typed REST endpoints with a Node.js/Express backend, JWT token protection, bcrypt password hashing, and MySQL database persistence with auto-detecting embedded dev mode.",
+                "technologies": "React 19, TypeScript, Vite, Tailwind CSS, React Router DOM v7, Node.js, Express.js, MySQL, JWT, bcryptjs, Lucide React, Google Stitch AI.",
+                "challenges": "Synchronizing real-time order lifecycle changes across customer checkout and admin dashboard while upholding warm epicurean typography, responsive layout fluidity, and enterprise-grade input validation.",
+                "result": "Deployed live to production at cravo-two.vercel.app with zero-configuration embedded resiliency, providing a premium dining experience and seamless kitchen operational efficiency."
+            }
+        },
+        {
             "title": "E-Commerce Web Application",
             "description": "A full-stack e-commerce web application built using Python, Django, HTML, CSS, JavaScript and MySQL.",
             "badges": ["Python", "Django", "HTML", "CSS", "JavaScript", "MySQL", "REST API"],

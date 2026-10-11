@@ -16,6 +16,8 @@ class ProjectSerializer(serializers.ModelSerializer):
             'badges': data['badges'],
             'features': data['features'],
             'architectureSteps': data['architecture_steps'],
+            'liveUrl': 'https://cravo-two.vercel.app' if 'cravo' in data['title'].lower() else '',
+            'githubUrl': 'https://github.com',
             'caseStudy': {
                 'overview': data['case_study_overview'],
                 'problem': data['case_study_problem'],
