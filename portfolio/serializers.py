@@ -16,7 +16,13 @@ class ProjectSerializer(serializers.ModelSerializer):
             'badges': data['badges'],
             'features': data['features'],
             'architectureSteps': data['architecture_steps'],
-            'liveUrl': 'https://cravo-two.vercel.app' if 'cravo' in data['title'].lower() else '',
+            'liveUrl': (
+                'https://studio-kanso.vercel.app/' if 'kanso' in data['title'].lower() or 'interior' in data['title'].lower()
+                else 'https://catchyexports.vercel.app/' if 'catchy' in data['title'].lower() or 'export' in data['title'].lower()
+                else 'https://aura-virid-eta.vercel.app/' if 'aura' in data['title'].lower()
+                else 'https://cravo-two.vercel.app' if 'cravo' in data['title'].lower()
+                else ''
+            ),
             'githubUrl': 'https://github.com',
             'caseStudy': {
                 'overview': data['case_study_overview'],
